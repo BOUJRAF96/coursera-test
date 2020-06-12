@@ -1,0 +1,79 @@
+
+* {
+	box-sizing: border-box;
+}
+/* Header Section */
+#header-nav {
+	height: 70px;
+	background-color: #BBB;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { 
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #AAA;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+/* Header end */
+/* start content */
+#main-content h1 {
+	text-align: center;
+	margin-bottom: 17px;
+}
+#home-tiles h3 {
+	text-align: center;
+}
+#home-tiles section {
+	background-color: #BBB;
+	margin:0 auto 15px;
+}
+/* content end */ 
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  	}
+  #home-tiles section {
+  	width:90%;
+  	margin-left: 5%;
+  	margin-right: 5%;
+  }
+ }
