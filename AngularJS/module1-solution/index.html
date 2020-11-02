@@ -10,7 +10,7 @@
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
   </head>
-  
+
 <body ng-app="LunchCheck">
    <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
@@ -18,15 +18,16 @@
          <div class="form-group">
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model="dishes">
+             class="form-control" ng-model="dishes" style="border :2px solid {{state}};">
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
          </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
-           <div ng-show="!empty && checked" class="alert alert-success">{{message}}</div>
-           <div ng-show="empty" class="alert alert-danger">Please enter data first</div>
+           <!-- <div ng-show="!empty && checked" class="alert alert-success">{{message}}</div>
+           <div ng-show="empty" class="alert alert-danger">Please enter data first</div> -->
+           <div class="form-group message" style="color:{{state}};">{{message}}</div>
            <div>Comment: This app do NOT consider empty item, i.e., , , as an item towards to the count. </div>
          </div>
    </div>
